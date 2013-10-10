@@ -346,7 +346,7 @@
       <locution href="vega://testApp/src/main/resources/jv/com/isb/puertorico/ivr/accountsMenu#/1"/>
     </states>
     <states xsi:type="operations:CallFlowState" name="savingAccounts" incomingTransitions="/1/@transitions.2" outgoingTransitions="/1/@transitions.3">
-      <subflow href="vega://testApp/src/main/resources/jv/com/isb/puertorico/ivr/savingAccounts#/1"/>
+      <subflow href="vega://testApp/src/main/resources/jv/com/isb/puertorico/ivr/saving-accounts#/1"/>
     </states>
     <states xsi:type="operations:CallFlowState" name="checkAccounts" incomingTransitions="/1/@transitions.1" outgoingTransitions="/1/@transitions.4">
       <subflow href="vega://testApp/src/main/resources/jv/com/isb/puertorico/ivr/checkAccounts#/1"/>
