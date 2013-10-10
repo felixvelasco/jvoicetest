@@ -1,0 +1,33 @@
+menuname accountsMenu 
+
+configuration {
+ bargein true
+
+}
+
+grammars {
+	dtmf "builtin:digits/?length=1"
+}
+audios
+   {
+   	main:
+   		when ("count==1") {
+   			say wording "Nuestro menú ha cambiado. Ahora le ofrecemos nuevas transacciones y servicios. Por favor, escuche las opciones con detenimiento. Para información sobre sus cuentas, tarjetas o préstamos, presione 1. Para realizar pagos o transacciones en sus cuentas, presione 2. Para solicitar un préstamo personal o una  tarjeta de crédito o para verificar el estado de su solicitud , presione 3 . Para información sobre servicio de internet, presione 4. Para cambiar su número secreto, presione 5. Para información de seguros, presione 6."
+   		}
+   		when ("count==2 || count == 3") {
+   			say wording "Para información sobre sus cuentas, tarjetas o préstamos, presione 1. Para realizar pagos o transacciones en sus cuentas, presione 2. Para solicitar un préstamo personal o una  tarjeta de crédito o para verificar el estado de su solicitud , presione 3 . Para información sobre servicio de internet, presione 4. Para cambiar su número secreto, presione 5. Para información de seguros, presione 6."
+   		}
+	nomatch :
+		say wording "La opción que usted seleccionó no es válida."
+	noinput :
+		say wording "No ha seleccionado una opción."
+	}
+
+outputs {
+	cuentas : '1'
+	pagos : '2'
+	prestamos : '3'
+	internet : '4'
+	clave : '5'
+	seguros : '6'
+}
