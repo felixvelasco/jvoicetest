@@ -956,18 +956,18 @@
     <states xsi:type="operations:InitialState" name="Initial" outgoingTransitions="/1/@transitions.0"/>
     <states xsi:type="operations:SwitchState" name="checklogin" incomingTransitions="/1/@transitions.0" outgoingTransitions="/1/@transitions.1 /1/@transitions.3"/>
     <states xsi:type="operations:CallFlowState" name="login" incomingTransitions="/1/@transitions.1" outgoingTransitions="/1/@transitions.2">
-      <subflow href="vega://h1/src/main/resources/jv/h3/login#/1"/>
+      <subflow href="vega://testApp/src/main/resources/jv/com/isb/puertorico/ivr/login#/1"/>
     </states>
     <states xsi:type="operations:CallState" name="accountSelectionSetup" incomingTransitions="/1/@transitions.2 /1/@transitions.3" outgoingTransitions="/1/@transitions.4"/>
     <states xsi:type="operations:InputState" name="accountSelectionInput" incomingTransitions="/1/@transitions.4 /1/@transitions.8" outgoingTransitions="/1/@transitions.5">
-      <locution href="vega://h1/src/main/resources/jv/h3/accountSelectionInput#/1"/>
+      <locution href="vega://testApp/src/main/resources/jv/com/isb/puertorico/ivr/accountSelectionInput#/1"/>
     </states>
     <states xsi:type="operations:SwitchState" name="lastInputResult" incomingTransitions="/1/@transitions.5" outgoingTransitions="/1/@transitions.9"/>
     <states xsi:type="operations:MenuState" name="menuDecision" incomingTransitions="/1/@transitions.9" outgoingTransitions="/1/@transitions.7 /1/@transitions.8 /1/@transitions.10 /1/@transitions.11">
-      <locution href="vega://h1/src/main/resources/jv/h3/menuDecision#/1"/>
+      <locution href="vega://testApp/src/main/resources/jv/com/isb/puertorico/ivr/menuDecision#/1"/>
     </states>
     <states xsi:type="operations:PromptState" name="balanceOutput" incomingTransitions="/1/@transitions.7" outgoingTransitions="/1/@transitions.6">
-      <locution href="vega://h1/src/main/resources/jv/h3/balanceOutput#/1"/>
+      <locution href="vega://testApp/src/main/resources/jv/com/isb/puertorico/ivr/balanceOutput#/1"/>
     </states>
     <states xsi:type="operations:FinalState" name="end" incomingTransitions="/1/@transitions.6"/>
     <states xsi:type="operations:FinalState" name="menuBack" incomingTransitions="/1/@transitions.10"/>

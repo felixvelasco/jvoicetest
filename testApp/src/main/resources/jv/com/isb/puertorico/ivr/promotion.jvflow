@@ -497,7 +497,7 @@
     <states xsi:type="operations:SwitchState" name="checkPromotionExpiration" outgoingTransitions="/1/@transitions.2 /1/@transitions.3"/>
     <states xsi:type="operations:FinalState" name="end" incomingTransitions="/1/@transitions.2 /1/@transitions.4"/>
     <states xsi:type="operations:PromptState" name="promotion_output" incomingTransitions="/1/@transitions.3" outgoingTransitions="/1/@transitions.4">
-      <locution href="vega://h1/src/main/resources/jv/h3/promotion_output#/1"/>
+      <locution href="vega://testApp/src/main/resources/jv/com/isb/puertorico/ivr/promotion_output#/1"/>
     </states>
     <transitions source="/1/@states.0" target="/1/@states.1" eventName="Transition"/>
     <transitions source="/1/@states.1" eventName="Transition"/>

@@ -632,16 +632,16 @@
   <operations:Flow name="wellcome" description="wellcome">
     <states xsi:type="operations:InitialState" name="Initial" outgoingTransitions="/1/@transitions.0"/>
     <states xsi:type="operations:PromptState" name="wellcomeOutput" incomingTransitions="/1/@transitions.0" outgoingTransitions="/1/@transitions.1">
-      <locution href="vega://h1/src/main/resources/jv/h3/wellcomeOutput#/1"/>
+      <locution href="vega://testApp/src/main/resources/jv/com/isb/puertorico/ivr/wellcomeOutput#/1"/>
     </states>
     <states xsi:type="operations:InputState" name="setLanguage" incomingTransitions="/1/@transitions.2" outgoingTransitions="/1/@transitions.3">
-      <locution href="vega://h1/src/main/resources/jv/h3/setLanguage#/1"/>
+      <locution href="vega://testApp/src/main/resources/jv/com/isb/puertorico/ivr/setLanguage#/1"/>
     </states>
     <states xsi:type="operations:SwitchState" name="lastInputResult" incomingTransitions="/1/@transitions.3" outgoingTransitions="/1/@transitions.4 /1/@transitions.6"/>
     <states xsi:type="operations:CallState" name="setLanguageInputCheck" incomingTransitions="/1/@transitions.4" outgoingTransitions="/1/@transitions.5"/>
     <states xsi:type="operations:FinalState" name="Final" incomingTransitions="/1/@transitions.5 /1/@transitions.6"/>
     <states xsi:type="operations:CallFlowState" name="promotion">
-      <subflow href="vega://h1/src/main/resources/jv/h3/promotion#/1"/>
+      <subflow href="vega://testApp/src/main/resources/jv/com/isb/puertorico/ivr/promotion#/1"/>
     </states>
     <transitions source="/1/@states.0" target="/1/@states.1" eventName="Transition"/>
     <transitions source="/1/@states.1" eventName="Transition"/>

@@ -1048,22 +1048,22 @@
   <operations:Flow name="main" description="main">
     <states xsi:type="operations:InitialState" name="Initial" outgoingTransitions="/1/@transitions.0"/>
     <states xsi:type="operations:CallFlowState" name="setup" incomingTransitions="/1/@transitions.0" outgoingTransitions="/1/@transitions.1">
-      <subflow href="vega://h1/src/main/resources/jv/h3/setup#/1"/>
+      <subflow href="vega://testApp/src/main/resources/jv/com/isb/puertorico/ivr/setup#/1"/>
     </states>
     <states xsi:type="operations:CallFlowState" name="wellcome" incomingTransitions="/1/@transitions.1" outgoingTransitions="/1/@transitions.2">
-      <subflow href="vega://h1/src/main/resources/jv/h3/wellcome#/1"/>
+      <subflow href="vega://testApp/src/main/resources/jv/com/isb/puertorico/ivr/wellcome#/1"/>
     </states>
     <states xsi:type="operations:CallFlowState" name="main-menu" incomingTransitions="/1/@transitions.2 /1/@transitions.4 /1/@transitions.5 /1/@transitions.15" outgoingTransitions="/1/@transitions.3 /1/@transitions.6">
-      <subflow href="vega://h1/src/main/resources/jv/h3/main-menu#/1"/>
+      <subflow href="vega://testApp/src/main/resources/jv/com/isb/puertorico/ivr/main-menu#/1"/>
     </states>
     <states xsi:type="operations:PromptState" name="noMenuBack" outgoingTransitions="/1/@transitions.4">
-      <locution href="vega://h1/src/main/resources/jv/h3/noMenuBack#/1"/>
+      <locution href="vega://testApp/src/main/resources/jv/com/isb/puertorico/ivr/noMenuBack#/1"/>
     </states>
     <states xsi:type="operations:PromptState" name="noMainMenu" outgoingTransitions="/1/@transitions.5">
-      <locution href="vega://h1/src/main/resources/jv/h3/noMainMenu#/1"/>
+      <locution href="vega://testApp/src/main/resources/jv/com/isb/puertorico/ivr/noMainMenu#/1"/>
     </states>
     <states xsi:type="operations:CallFlowState" name="accounts" incomingTransitions="/1/@transitions.8" outgoingTransitions="/1/@transitions.13">
-      <subflow href="vega://h1/src/main/resources/jv/h3/accounts#/1"/>
+      <subflow href="vega://testApp/src/main/resources/jv/com/isb/puertorico/ivr/accounts#/1"/>
     </states>
     <states xsi:type="operations:FinalState" name="end" incomingTransitions="/1/@transitions.14"/>
     <states xsi:type="operations:SwitchState" name="accounts" incomingTransitions="/1/@transitions.13" outgoingTransitions="/1/@transitions.14 /1/@transitions.15"/>

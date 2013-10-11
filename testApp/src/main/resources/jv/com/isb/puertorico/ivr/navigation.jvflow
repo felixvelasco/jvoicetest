@@ -233,7 +233,7 @@
   </pi:Diagram>
   <operations:Flow name="navigation" description="navigation">
     <states xsi:type="operations:CallFlowState" name="main-menu" incomingTransitions="/1/@transitions.0" outgoingTransitions="/1/@transitions.1">
-      <subflow href="vega://h1/src/main/resources/jv/h3/main-menu#/1"/>
+      <subflow href="vega://testApp/src/main/resources/jv/com/isb/puertorico/ivr/main-menu#/1"/>
     </states>
     <states xsi:type="operations:InitialState" name="Initial" outgoingTransitions="/1/@transitions.0"/>
     <states xsi:type="operations:FinalState" name="menuBack"/>

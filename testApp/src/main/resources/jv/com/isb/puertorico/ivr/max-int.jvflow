@@ -254,10 +254,10 @@
   <operations:Flow name="max-int" description="max-int">
     <states xsi:type="operations:InitialState" name="Initial" outgoingTransitions="/1/@transitions.0"/>
     <states xsi:type="operations:PromptState" name="maxIntOutput" incomingTransitions="/1/@transitions.0" outgoingTransitions="/1/@transitions.1">
-      <locution href="vega://h1/src/main/resources/jv/h3/maxIntOutput#/1"/>
+      <locution href="vega://testApp/src/main/resources/jv/com/isb/puertorico/ivr/maxIntOutput#/1"/>
     </states>
     <states xsi:type="operations:CallFlowState" name="transfer" incomingTransitions="/1/@transitions.1" outgoingTransitions="/1/@transitions.2">
-      <subflow href="vega://h1/src/main/resources/jv/h3/transfer#/1"/>
+      <subflow href="vega://testApp/src/main/resources/jv/com/isb/puertorico/ivr/transfer#/1"/>
     </states>
     <states xsi:type="operations:FinalState" name="end" incomingTransitions="/1/@transitions.2"/>
     <transitions source="/1/@states.0" target="/1/@states.1" eventName="Transition"/>
