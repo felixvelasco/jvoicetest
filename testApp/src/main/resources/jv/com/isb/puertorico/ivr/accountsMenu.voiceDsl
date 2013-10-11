@@ -12,15 +12,15 @@ audios
    {
    	main:
    		when ("count==1") {
-   			say wording "Nuestro menú ha cambiado. Ahora le ofrecemos nuevas transacciones y servicios. Por favor, escuche las opciones con detenimiento. Para información sobre sus cuentas, tarjetas o préstamos, presione 1. Para realizar pagos o transacciones en sus cuentas, presione 2. Para solicitar un préstamo personal o una  tarjeta de crédito o para verificar el estado de su solicitud , presione 3 . Para información sobre servicio de internet, presione 4. Para cambiar su número secreto, presione 5. Para información de seguros, presione 6."
+   			say wording "Nuestro menÃº ha cambiado. Ahora le ofrecemos nuevas transacciones y servicios. Por favor, escuche las opciones con detenimiento. Para informaciÃ³n sobre sus cuentas, tarjetas o prÃ©stamos, presione 1. Para realizar pagos o transacciones en sus cuentas, presione 2. Para solicitar un prÃ©stamo personal o una  tarjeta de crÃ©dito o para verificar el estado de su solicitud , presione 3 . Para informaciÃ³n sobre servicio de internet, presione 4. Para cambiar su nÃºmero secreto, presione 5. Para informaciÃ³n de seguros, presione 6."
    		}
    		when ("count==2 || count == 3") {
-   			say wording "Para información sobre sus cuentas, tarjetas o préstamos, presione 1. Para realizar pagos o transacciones en sus cuentas, presione 2. Para solicitar un préstamo personal o una  tarjeta de crédito o para verificar el estado de su solicitud , presione 3 . Para información sobre servicio de internet, presione 4. Para cambiar su número secreto, presione 5. Para información de seguros, presione 6."
+   			say wording "Para informaciÃ³n sobre sus cuentas, tarjetas o prÃ©stamos, presione 1. Para realizar pagos o transacciones en sus cuentas, presione 2. Para solicitar un prÃ©stamo personal o una  tarjeta de crÃ©dito o para verificar el estado de su solicitud , presione 3 . Para informaciÃ³n sobre servicio de internet, presione 4. Para cambiar su nÃºmero secreto, presione 5. Para informaciÃ³n de seguros, presione 6."
    		}
 	nomatch :
-		say wording "La opción que usted seleccionó no es válida."
+		say wording "La opciÃ³n que usted seleccionÃ³ no es vÃ¡lida."
 	noinput :
-		say wording "No ha seleccionado una opción."
+		say wording "No ha seleccionado una opciÃ³n."
 	}
 
 outputs {
